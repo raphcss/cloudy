@@ -1,0 +1,42 @@
+{
+  "name": "discord-moderation-bot",
+  "version": "1.0.0",
+  "description": "Bot de modération Discord avec panel web Vue.js et gestion des rôles",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "bot": "node src/bot/index.js",
+    "bot:dev": "nodemon src/bot/index.js",
+    "api": "node src/api/index.js",
+    "api:dev": "nodemon src/api/index.js",
+    "deploy-commands": "node src/scripts/deploy-commands.js",
+    "seed": "node src/scripts/seed.js"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "moderation",
+    "vue",
+    "mongodb"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "form-data": "^4.0.5",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.0",
+    "validator": "^13.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
